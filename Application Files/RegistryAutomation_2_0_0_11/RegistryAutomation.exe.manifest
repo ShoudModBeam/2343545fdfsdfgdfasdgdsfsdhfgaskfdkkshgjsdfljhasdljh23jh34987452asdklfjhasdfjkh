@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="RegistryAutomation.exe" version="2.0.0.11" publicKeyToken="0b00f0b6c0310a8a" language="en-GB" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="logo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="RegistryAutomation" version="2.0.0.1" language="neutral" processorArchitecture="msil" />
+    <commandLine file="RegistryAutomation.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HtmlAgilityPack.dll" size="172544">
+      <assemblyIdentity name="HtmlAgilityPack" version="1.12.4.0" publicKeyToken="BD319B19EAF3B43A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MrDAXOSDVEmasR3qfLt923BegcWUFf7itlvZizBlIWQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="721320">
+      <assemblyIdentity name="Newtonsoft.Json" version="13.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8MB68OhNTdTaS9eCO6RTW8BIGzv2I+1Atlm2gUemu3U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RegistryAutomation.exe" size="83464">
+      <assemblyIdentity name="RegistryAutomation" version="2.0.0.1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XVM7gmdYwR5nT+fvCz8tRqUu1+5R+55yICQW04LijPs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="logo.ico" size="16958">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6LeVXw8x8cGvctgIBIQLu4fPxxBNtRN4eXEyiLdxlMQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="RegistryAutomation.exe.config" size="1549">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>r/rajHRakD5J3pYMVBMiZoLGNK8StaE/5m0sJqjrvWw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-936NO0K\ShoudModBeam" issuerKeyHash="e1cb83c3ea21166d13cfb778c048fa29ac1ad2c1" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>HY+KOtEYXhq+W8Y8ew4eZwfmY4SvLncnAPZD0ewcWk4=</DigestValue></Reference></SignedInfo><SignatureValue>QtRCV5tEiEjvXIU4wsQ1OmLYC6UOgH8e8WNZTlNDYZgzxWJLEDDnfXzdaE17cGcLVLzcrzHPsFSqfbFBn43aTCz5qbgjqDnNcWlSmA7odnrA60GqDQSp+i/GONAQlDT//uVNNZS7TJi/N9MFH+EKH1scDILkmUltl0u4GKmQbvs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wz57tVyL8lyK60T0fJ6RY74kJk7GpBnOkxETXuSQW5Xd56BBvxAYoPFHC5lEYfuVmmy1yxgEWFOniHbSURvRW+AbnwwHIu8loxmAwMX15ucoo0Ti7QJsy3dCZe30SbIsNDF4JQelyhNqFECVO184eaLxBYGHgNgW00wR70U8ttU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="4e5a1cecd143f60027772eaf8463e607671e0e7b3cc65bbe1a5e18d13a8a8f1d" Description="" Url=""><as:assemblyIdentity name="RegistryAutomation.exe" version="2.0.0.11" publicKeyToken="0b00f0b6c0310a8a" language="en-GB" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-936NO0K\ShoudModBeam</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>qs/FoXAUilb0w03PELvilt92KYAgY0v8miUF7a1+6Es=</DigestValue></Reference></SignedInfo><SignatureValue>MDHDG1sWVhMU23ZQ9ZyjegsPelJDJRiSMIrL+LO5YrYAOytVpc3F3URqULegBXow21AAiSWXWYB7ViUJAirGcwaIoJBPjTiGtGsUkfT7cL7X86sPZfV8VZjJw7m40OaI4f/iS1CerxwxrA/e2JYMTqSPd9oP0ahUdXyOOfbutbg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wz57tVyL8lyK60T0fJ6RY74kJk7GpBnOkxETXuSQW5Xd56BBvxAYoPFHC5lEYfuVmmy1yxgEWFOniHbSURvRW+AbnwwHIu8loxmAwMX15ucoo0Ti7QJsy3dCZe30SbIsNDF4JQelyhNqFECVO184eaLxBYGHgNgW00wR70U8ttU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICCTCCAXKgAwIBAgIQYTkwOAgav6RKHBztaYIv5jANBgkqhkiG9w0BAQsFADBDMUEwPwYDVQQDHjgARABFAFMASwBUAE8AUAAtADkAMwA2AE4ATwAwAEsAXABTAGgAbwB1AGQATQBvAGQAQgBlAGEAbTAeFw0yNjA0MDQyMTU5MTdaFw0yNzA0MDUwMzU5MTdaMEMxQTA/BgNVBAMeOABEAEUAUwBLAFQATwBQAC0AOQAzADYATgBPADAASwBcAFMAaABvAHUAZABNAG8AZABCAGUAYQBtMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDPnu1XIvyXIrrRPR8npFjviQmTsakGc6TERNe5JBbld3noEG/EBig8UcLmURh+5WabLXLGARYU6eIdtJRG9Fb4BufDAci7yWjGYDAxfXm5yijROLtAmzLd0Jl7fRJsiw0MXglB6XKE2oUQJU7Xzh5ovEFgYeA2BbTTBHvRTy21QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAJaKrIO6m77lPMPqwJZvg4ymMxqOW9FxvLc7Fug4wvpSWGDT0sjmMNdfBlO5PVfFQxEK2Wp66q8ViHnsIC/hmYbPuQseqWk1pRyvkwNv16t+fL3/kg8z2aMLVohnW2/syZCxQpqfXAM8XhaVdZTAp2oeBqIC2QanomIqwlapN8gf</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
